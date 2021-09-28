@@ -155,9 +155,10 @@ Then, find an edge that has two colors that are not yellow i.e. red and blue
 blue and orange, etc. Turn the top so the edge connects with it's center,
 making the "T" shape.`
   directions[2][2] = `Then, figure out if the edge goes left or right.`
-  directions[2][3] = `If it goes left, then perform this permutation shown in the video`
-  directions[2][4] = "If it goes right, then perform this permutation shown in the video"
-  directions[2][5] = `Replace it first`
+  directions[2][3] = `If it goes right, then perform this permutation shown in the video`
+  directions[2][4] = "If it goes left, then perform this permutation shown in the video"
+  directions[2][5] = `If an edge piece is in the wrong slot, replace it first, then 
+perform one of the two previous algorithms.`
   directions[2][6] = "Repeat until you finish the whole second layer!!"
 
   //adding pictures
@@ -174,9 +175,9 @@ function vid3(){
   vid[2][1] = createVideo('assets/p2d1.mp4')
   vid[2][2] = createVideo('assets/p2d2.mp4')
   vid[2][3] = createVideo('assets/p2d3.mp4')
-  vid[2][4] = createVideo('assets/p2d4.mp4')
-  vid[2][5] = createVideo('assets/p2d5.mp4')
-  vid[2][6] = createVideo('assets/p2d4.mp4')
+  vid[2][4] = createVideo('assets/p2d2.mp4')
+  vid[2][5] = createVideo('assets/p2d4.mp4')
+  vid[2][6] = createVideo('assets/p2d5.mp4')
   for(let i = 0; i < vid[2].length; i++){
     vidLoad(vid[2][i])
     vid[2][i].position(1000,200)
@@ -455,6 +456,7 @@ function back_click(){
 
 
 function cleared(){
+    //remove()
     background(300);
     textSize(48);
     textFont('Georgia')
