@@ -36,6 +36,17 @@ function setup() {
     dir4()
     dir5()
     dir6()
+    /*vid1()
+    vid2()
+    vid3()
+    vid4()
+    vid5()
+    vid6()
+    vid[0][0] = createVideo('assets/p1d0.mp4')
+    vidLoad(vid[0][0])
+    vid[0][0].position(1000,200)
+    vid[0][0].size(400,300)
+    vid[0][0].hide()*/
   }
  
 function draw() {
@@ -83,10 +94,10 @@ white cross. Repeat the last two steps for every edge, and the white cross is cr
 
 }
 function vid1(){
-  vid[0][0] = createVideo('assets/p1d0.mov')
-  vid[0][1] = createVideo('assets/p1d1.mov')
-  vid[0][2] = createVideo('assets/p1d2.mov')
-  vid[0][3] = createVideo('assets/p1d3.mov')
+  vid[0][0] = createVideo('assets/p1d0.mp4')
+  vid[0][1] = createVideo('assets/p1d1.mp4')
+  vid[0][2] = createVideo('assets/p1d2.mp4')
+  vid[0][3] = createVideo('assets/p1d3.mp4')
   for(let i = 0; i < vid[0].length; i++){
     vidLoad(vid[0][i])
     vid[0][i].position(1000,200)
@@ -121,14 +132,14 @@ the corner into it's rightful place.`
   pictures[1][7] = loadImage('assets/p2d0.png')
 }
 function vid2(){
-  vid[1][0] = createVideo('assets/p1d2.mov')
-  vid[1][1] = createVideo('assets/p1d3.mov')
-  vid[1][2] = createVideo('assets/p1d4.mov')
-  vid[1][3] = createVideo('assets/p1d5.mov')
-  vid[1][4] = createVideo('assets/p1d6.mov')
-  vid[1][5] = createVideo('assets/p1d7.mov')
-  vid[1][6] = createVideo('assets/p1d8.mov')
-  vid[1][7] = createVideo('assets/p1d9.mov')
+  vid[1][0] = createVideo('assets/p1d2.mp4')
+  vid[1][1] = createVideo('assets/p1d3.mp4')
+  vid[1][2] = createVideo('assets/p1d4.mp4')
+  vid[1][3] = createVideo('assets/p1d5.mp4')
+  vid[1][4] = createVideo('assets/p1d6.mp4')
+  vid[1][5] = createVideo('assets/p1d7.mp4')
+  vid[1][6] = createVideo('assets/p1d8.mp4')
+  vid[1][7] = createVideo('assets/p1d9.mp4')
   for(let i = 0; i < vid[1].length; i++){
     vidLoad(vid[1][i])
     vid[1][i].position(1000,200)
@@ -158,7 +169,21 @@ making the "T" shape.`
   pictures[2][5] = loadImage('assets/p3d5.png')
   pictures[2][6] = loadImage('assets/p3d0.png')
 }
-
+function vid3(){
+  vid[2][0] = createVideo('assets/p2d5.mp4')
+  vid[2][1] = createVideo('assets/p2d1.mp4')
+  vid[2][2] = createVideo('assets/p2d2.mp4')
+  vid[2][3] = createVideo('assets/p2d3.mp4')
+  vid[2][4] = createVideo('assets/p2d4.mp4')
+  vid[2][5] = createVideo('assets/p2d5.mp4')
+  vid[2][6] = createVideo('assets/p2d4.mp4')
+  for(let i = 0; i < vid[2].length; i++){
+    vidLoad(vid[2][i])
+    vid[2][i].position(1000,200)
+    vid[2][i].size(400,300)
+    vid[2][i].hide()
+  }
+}
 function dir4(){
   directions[3][0] = `Next, we want to finish the top layer, and get the yellow side all done.`;
   directions[3][1] = `Our first step to do this is to create the yellow cross, as shown here.`
@@ -183,6 +208,21 @@ then perform the algorithm one or two more times.`
   pictures[3][6] = loadImage('assets/p4d5.png')
   //pictures[3][7] = loadImage('assets/p4d7.png')
 }
+function vid4(){
+  vid[3][0] = createVideo('assets/p3d0.mp4')
+  vid[3][1] = createVideo('assets/p3d1.mp4')
+  vid[3][2] = createVideo('assets/p3d2.mp4')
+  vid[3][3] = createVideo('assets/p3d3.mp4')
+  vid[3][4] = createVideo('assets/p3d4.mp4')
+  vid[3][5] = createVideo('assets/p3d5.mp4')
+  vid[3][6] = createVideo('assets/p3d6.mp4')
+  for(let i = 0; i < vid[3].length; i++){
+    vidLoad(vid[3][i])
+    vid[3][i].position(1000,200)
+    vid[3][i].size(400,300)
+    vid[3][i].hide()
+  }
+}
 function dir5(){
   directions[4][0] = `In our second to last step, we need to create "Headlights", where all 
 the same color corners are all on the same side, as shown in the blue
@@ -206,6 +246,19 @@ should appear.`
   pictures[4][3] = loadImage('assets/p5d3.png')
   pictures[4][4] = loadImage('assets/p5d0.png')
 }
+function vid5(){
+  vid[4][0] = createVideo('assets/p4d0.mp4')
+  vid[4][1] = createVideo('assets/p4d1.mp4')
+  vid[4][2] = createVideo('assets/p4d2.mp4')
+  vid[4][3] = createVideo('assets/p4d2.mp4')
+  vid[4][4] = createVideo('assets/p4d4.mp4')
+  for(let i = 0; i < vid[4].length; i++){
+    vidLoad(vid[4][i])
+    vid[4][i].position(1000,200)
+    vid[4][i].size(400,300)
+    vid[4][i].hide()
+  }
+}
 function dir6(){
   directions[5][0] = `You're almost done! This last step will complete the cube.`;
   directions[5][1] = `Now that we have headlights on every side, we need to move the edges
@@ -221,6 +274,18 @@ When you finish, your cube should be completed!`
   pictures[5][2] = loadImage('assets/p6d2.png')
   pictures[5][3] = loadImage('assets/p6d3.png')
 }
+function vid6(){
+  vid[5][0] = createVideo('assets/p5d0.mp4')
+  vid[5][1] = createVideo('assets/p5d1.mp4')
+  vid[5][2] = createVideo('assets/p5d2.mp4')
+  vid[5][3] = createVideo('assets/p5d3.mp4')
+  for(let i = 0; i < vid[5].length; i++){
+    vidLoad(vid[5][i])
+    vid[5][i].position(1000,200)
+    vid[5][i].size(400,300)
+    vid[5][i].hide()
+  }
+}
 //==================================================================================================================
 //Button Click Functions
 //==================================================================================================================
@@ -231,8 +296,16 @@ function p1Click(){
   image(pictures[0][0], 300, 150)
   currPart = 0;
   currDir = 0;
-  //vid[0][0].show()
+  vid[0][0].show()
   text("Part " + String(currPart+ 1) + " Step " + String(currDir+1), 1000, 200);
+  for(i = 0; i < vid.length; i++){
+    for(j = 0; j < vid[i].length; j++){
+      if(i!=currPart){
+        vid[i][j].remove();
+      }
+    }
+  }
+  vid1()
 }
 function p2Click(){
   cleared()
@@ -240,8 +313,16 @@ function p2Click(){
   image(pictures[1][0], 300, 150)
   currPart = 1;
   currDir = 0; 
-  //vid[1][0].show()
+  vid[1][0].show()
   text("Part " + String(currPart+ 1) + " Step " + String(currDir+1), 1000, 200);
+  for(i = 0; i < vid.length; i++){
+    for(j = 0; j < vid[i].length; j++){
+      if(i!=currPart){
+        vid[i][j].remove();
+      }
+    }
+  }
+  vid2()
 }
 function p3Click(){
   cleared()
@@ -250,6 +331,14 @@ function p3Click(){
   currPart = 2;
   currDir = 0; 
   text("Part " + String(currPart+ 1) + " Step " + String(currDir+1), 1000, 200);
+  for(i = 0; i < vid.length; i++){
+    for(j = 0; j < vid[i].length; j++){
+      if(i!=currPart){
+        vid[i][j].remove();
+      }
+    }
+  }
+  vid3()
 }
 function p4Click(){
   cleared()
@@ -258,6 +347,14 @@ function p4Click(){
   currPart = 3;
   currDir = 0; 
   text("Part " + String(currPart+ 1) + " Step " + String(currDir+1), 1000, 200);
+  for(i = 0; i < vid.length; i++){
+    for(j = 0; j < vid[i].length; j++){
+      if(i!=currPart){
+        vid[i][j].remove();
+      }
+    }
+  }
+  vid4()
 }
 function p5Click(){
   cleared()
@@ -266,6 +363,14 @@ function p5Click(){
   currPart = 4;
   currDir = 0; 
   text("Part " + String(currPart+ 1) + " Step " + String(currDir+1), 1000, 200);
+  for(i = 0; i < vid.length; i++){
+    for(j = 0; j < vid[i].length; j++){
+      if(i!=currPart){
+        vid[i][j].remove();
+      }
+    }
+  }
+  vid5()
 }
 function p6Click(){
   cleared()
@@ -274,6 +379,14 @@ function p6Click(){
   currPart = 5;
   currDir = 0; 
   text("Part " + String(currPart+ 1) + " Step " + String(currDir+1), 1000, 200);
+  for(i = 0; i < vid.length; i++){
+    for(j = 0; j < vid[i].length; j++){
+      if(i!=currPart){
+        vid[i][j].remove();
+      }
+    }
+  }
+  vid6()
 }
 
 //==================================================================================================================
@@ -288,36 +401,6 @@ function next_click(){
     image(pictures[currPart][currDir+1], 300, 150)
     //vid[currPart][currDir].remove()
     currDir+=1; 
-    /*if(currPart == 0){
-      vid1()
-    }
-    else if(currPart == 1){
-      vid2()
-    }
-    else if(currPart == 2){
-      vid3()
-    }
-    else if(currPart == 3){
-      vid4()
-    }
-    else if(currPart == 4){
-      vid5()
-    }
-    else {
-      vid6()
-    }*/
-    //vid[currPart][currDir].show()
-  }
-  text("Part " + String(currPart+ 1) + " Step " + String(currDir+1), 1000, 200);
-}
-function back_click(){
-  if(currDir > 0){
-    cleared()
-    text(directions[currPart][currDir-1], 100, 500)
-    image(pictures[currPart][currDir-1], 300, 150)
-    //vid[currPart][currDir].remove()
-    currDir-=1
-    /*vid[currPart][currDir].show()
     if(currPart == 0){
       vid1()
     }
@@ -335,7 +418,37 @@ function back_click(){
     }
     else {
       vid6()
-    }*/
+    }
+    vid[currPart][currDir].show()
+  }
+  text("Part " + String(currPart+ 1) + " Step " + String(currDir+1), 1000, 200);
+}
+function back_click(){
+  if(currDir > 0){
+    cleared()
+    text(directions[currPart][currDir-1], 100, 500)
+    image(pictures[currPart][currDir-1], 300, 150)
+    vid[currPart][currDir].hide()
+    currDir-=1
+    vid[currPart][currDir].show()
+    if(currPart == 0){
+      vid1()
+    }
+    else if(currPart == 1){
+      vid2()
+    }
+    else if(currPart == 2){
+      vid3()
+    }
+    else if(currPart == 3){
+      vid4()
+    }
+    else if(currPart == 4){
+      vid5()
+    }
+    else {
+      vid6()
+    }
   }
   text("Part " + String(currPart+ 1) + " Step " + String(currDir+1), 1000, 200);
 }
@@ -363,7 +476,7 @@ function cleared(){
     part6 = createButton("Part6: Last Layer");
     part6.position(800,450);
     textSize(20);
-    //text("Video Accompaniment: ", 1000, 150)
+    text("Video Accompaniment: ", 1000, 150)
 }
 
 function vidLoad(__){
